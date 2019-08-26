@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ToDo</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<section class="wrapper">
+			<input type="text" name="input" placeholder="enter your todo">
+			<ul>
+				<li>
+					<input type="checkbox" name="checkbox">
+					<p>hi hello</p>
+					<button>X</button>
+				</li>
+			</ul>
+		</section>
+		<script type="text/javascript">
+			function keyCode(event) {
+  var y = event.keyCode;
+  if (y == 13) {
+var ul = document.querySelector("ul");
+   var li = document.createElement("li");
+	li.style.innerText = "hihihi";
+	var todotext = document.createElement("input");
+	var del = document.createElement("button");
+	del.style.innerText = "x";
+	ul.appendChild(li);
+	li.appendChild(todotext);
+	li.appendChild(del);
+	
+  }
+}
+document.querySelector("input").addEventListener("keyup",keyCode)
+		</script>
+
+
+
+
+		<script src="main.js"></script>
+	</body>
+</html>
