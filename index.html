@@ -29,6 +29,7 @@
 			li.appendChild(del);
 			document.querySelector("input").value = "";
 			del.addEventListener("click",() => li.style.display = "none");
+			todocheck.addEventListener("click", () => li.style.textDecoration = "line-through");
   			}
 			}
 			document.querySelector("input").addEventListener("keyup",keyCode)
